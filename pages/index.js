@@ -16,11 +16,11 @@ export default function Home() {
         <Disclosure as={'nav'}>
 
         <div className="flex ">
-          <div className=" bg-blue-900 ">
+          <div className="  ">
             <SideNavbar />
           </div>
-          <div className=" w-full md:w-[98%] flex  md:pl-44 bg-gray-100 h-screen" >
-            <div className="w-full  border-2 float-right md:w-[1800px] pr-4" >
+          <div className=" w-full md:w-[98%]  flex  md:pl-44 bg-gray-100 h-screen"  >
+            <div className="w-full  border-2 float-right md:w-[1150px]  pr-4" >
 
             <Navbar />
             <MessageBar />
