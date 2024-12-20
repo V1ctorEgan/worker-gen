@@ -44,9 +44,9 @@ function SideNavbar() {
               Virtual Dashboard
             </h1> */}
             <div className=" my-1  border-gray-100 pb-1">
-              <div className="flex mb-1 justify-start items-center gap-2 pl-1 hover:bg-gray-900 p-1 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                <FaHouseChimney className="text-xs text-gray-600 group-hover:text-white " />
-                <h3 className="text-xs text-gray-800 group-hover:text-white font-semibold ">
+              <div className="flex mb-1 justify-start items-center gap-2 pl-1 hover:bg-gray-100 p-1 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                <FaHouseChimney className="text-xs text-gray-600 group-hover:text-black " />
+                <h3 className="text-xs text-gray-800 group-hover:text-black font-semibold ">
                   Home
                 </h3>
               </div>

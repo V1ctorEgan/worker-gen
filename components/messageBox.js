@@ -75,7 +75,7 @@ function MessageBar() {
                   <div className="text-gray-400">COO. Northwind Traders</div>
                 </div>
               </div>
-              <div className="bg-gray-200 w-[95%] h-[4rem] rounded-lg ml-2 p-2">
+              <div className="bg-blue-100 w-[95%] h-[4rem] rounded-lg ml-2 p-2">
                 <div className="flex items-center gap-1 font-semibold">
                   <FaSquare className="text-xs" />{" "}
                   <span className="text-xs">Engage with Jane Reyes</span>
@@ -100,7 +100,7 @@ function MessageBar() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-200 w-[95%] h-[4rem] rounded-lg ml-2 p-2">
+              <div className="bg-blue-100 w-[95%] h-[4rem] rounded-lg ml-2 p-2">
                 <div className="flex items-center gap-1 font-semibold">
                   <FaSquare className="text-xs" />{" "}
                   <span className="text-xs">
