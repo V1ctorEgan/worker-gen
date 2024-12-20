@@ -50,7 +50,7 @@ function SideNavbar() {
               <div className="flex  mb-1 justify-start items-center gap-2  pl-1 hover:bg-gray-900 p-1 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <FaRegComments className="text-xs text-gray-600 group-hover:text-white " />
                 <h3 className="text-xs text-gray-800 group-hover:text-white font-semibold ">
-                  pin
+                  pinned
                 </h3>
               </div>
             </div>

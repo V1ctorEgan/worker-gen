@@ -81,7 +81,6 @@ function MessageBar() {
                   <span className="text-xs">Engage with Jane Reyes</span>
                 </div>
                 <div className="text-xs text-gray-500">
-                  {" "}
                   Jane maybe interested in upgrading espresso machines for her
                   in-store coffee shops
                 </div>
@@ -147,7 +146,7 @@ function MessageBar() {
               </div>
             </div>
             <div className="bg-gray-100 w-[95%] h-[1rem] rounded-lg ml-2 pl-2">
-              <div className="text-[.5rem] text-gray-500">Prepare me for Fabrikam's key stakeholder meeting</div>
+              <div className="text-[.5rem] text-gray-500">Prepare me for Fabrikam'/s key stakeholder meeting</div>
             </div>
           </div>
           <div className="text-blue-800">show all key activities</div>
