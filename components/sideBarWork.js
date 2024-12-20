@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaHouseChimney } from "react-icons/fa6";
 import SideBarComp from './sideComponent';
 
 function SideBarComponent(){

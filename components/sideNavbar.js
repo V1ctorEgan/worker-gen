@@ -12,9 +12,18 @@ import { Disclosure } from "@headlessui/react";
 import { FaHouseChimney } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
-import { BiMessageSquareDots } from "react-icons/bi";
+// import { BiMessageSquareDots } from "react-icons/bi";
+import { TfiPinAlt } from "react-icons/tfi";
+import { FaRegClock, FaSquare  } from "react-icons/fa";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { LuLayoutDashboard,LuClipboardPen  } from "react-icons/lu";
 import SideBarComp from "./sideComponent";
-
+import { MdOutlineWallpaper, MdOutlineQuickreply  } from "react-icons/md";
+import { IoPersonOutline } from "react-icons/io5";
+import { TbPhoneEnd } from "react-icons/tb";
+import { RiFilePaper2Line, RiBox3Line  } from "react-icons/ri";
+import { BsPersonGear } from "react-icons/bs";
+import { PiNewspaperLight } from "react-icons/pi";
 function SideNavbar() {
   // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   // const toggleSidebar = () => {
@@ -42,13 +51,13 @@ function SideNavbar() {
                 </h3>
               </div>
               <div className="flex  mb-1 justify-start items-center gap-2 pl-1 hover:bg-gray-900 p-1 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                <CgProfile className="text-xs text-gray-600 group-hover:text-white " />
+                <FaRegClock className="text-xs text-black group-hover:text-white " />
                 <h3 className="text-xs text-gray-800 group-hover:text-white font-semibold ">
                   Recent
                 </h3>
               </div>
               <div className="flex  mb-1 justify-start items-center gap-2  pl-1 hover:bg-gray-900 p-1 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                <FaRegComments className="text-xs text-gray-600 group-hover:text-white " />
+                <TfiPinAlt className="text-xs text-gray-600 group-hover:text-white " />
                 <h3 className="text-xs text-gray-800 group-hover:text-white font-semibold ">
                   pinned
                 </h3>
@@ -58,46 +67,46 @@ function SideNavbar() {
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 My work
               </h2>
-              <SideBarComp title={"Sales acelerator"} />
-              <SideBarComp title={"Dashboards"} />
-              <SideBarComp title={"Activities"} />
+              <SideBarComp title={"Sales acelerator"} icon={ <HiOutlineRocketLaunch className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Dashboards"} icon={<LuLayoutDashboard className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Activities"}icon={<LuClipboardPen  className="text-xs text-gray-600 group-hover:text-white" />}/>
             </div>
             <div className=" my-h   pb-1">
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 Customers
               </h2>
-              <SideBarComp title={"Accounts"} />
-              <SideBarComp title={"Contacts"} />
+              <SideBarComp title={"Accounts"} icon={<MdOutlineWallpaper className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Contacts"} icon={<IoPersonOutline className="text-xs text-gray-600 group-hover:text-white" />}/>
             </div>
             <div className=" my-h   pb-1">
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 Sales
               </h2>
-              <SideBarComp title={"Lead"} />
-              <SideBarComp title={"Opportunities"} />
-              <SideBarComp title={"Competitors"} />
+              <SideBarComp title={"Lead"} icon={<TbPhoneEnd className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Opportunities"} icon={<RiFilePaper2Line className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Competitors"} icon={<BsPersonGear className="text-xs text-gray-600 group-hover:text-white" />}/>
             </div>
             <div className=" my-h   pb-1">
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 Collateral
               </h2>
-              <SideBarComp title={"Quotes"} />
-              <SideBarComp title={"Order"} />
-              <SideBarComp title={"Invoice"} />
-              <SideBarComp title={"Products"} />
+              <SideBarComp title={"Quotes"} icon={<PiNewspaperLight className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Order"} icon={<PiNewspaperLight className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Invoice"} icon={<PiNewspaperLight className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Products"} icon={<RiBox3Line  className="text-xs text-gray-600 group-hover:text-white" />}/>
             </div>
             <div className=" my-h   pb-1">
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 Marketing
               </h2>
-              <SideBarComp title={"Market List"} />
-              <SideBarComp title={"Campaigns"} />
+              <SideBarComp title={"Market List"} icon={<LuLayoutDashboard className="text-xs text-gray-600 group-hover:text-white" />}/>
+              <SideBarComp title={"Quick Campaigns"} icon={<MdOutlineQuickreply  className="text-xs text-gray-600 group-hover:text-white" />}/>
             </div>
             <div className=" my-h   pb-1">
               <h2 className="text-sm text-gray-900 mb-1 font-semibold">
                 Performance
               </h2>
-              <SideBarComp title={"Sales"} />
+              <SideBarComp sale title={"Sales"} icon={<FaSquare  className="text-xs text-purple-800 group-hover:text-white" />}/>
             </div> 
           </div>
           

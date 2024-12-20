@@ -66,7 +66,7 @@ function MessageBar() {
             are actively engaging. These leads need your focus
           </div>
           <div className="flex flex-row p-2 gap-2 ">
-            <div className="w-[24rem] shadow-sm h-[8rem] border rounded-md">
+            <div className="w-[24rem] shadow-sm h-[8rem] border rounded-md hover:scale-105 hover:shadow-md">
               <div className="flex  justify-start ">
                 {" "}
                 <div className="h-5 w-5 mt-2 ml-2 rounded-full bg-gray-300"></div>
@@ -89,7 +89,7 @@ function MessageBar() {
                 Expand Business . High buying intent
               </div>
             </div>
-            <div className="w-[24rem] h-[8rem] shadow-sm border rounded-md">
+            <div className="w-[24rem] h-[8rem] shadow-sm border rounded-md  hover:scale-105 hover:shadow-md">
               <div className="flex  justify-start ">
                 {" "}
                 <div className="h-5 w-5 mt-2 ml-2 rounded-full bg-gray-300"></div>
@@ -121,7 +121,7 @@ function MessageBar() {
         </div>
         <div className=" flex-[1.5] text-xs font-semibold pl-4">
           <div>Other key activities</div>
-          <div className="border-2 shadow-sm h-[4rem] w-[17rem] rounded-lg border-t-0 mb-3">
+          <div className="border-2 shadow-sm h-[4rem] w-[17rem] rounded-lg border-t-0 mb-3 hover:scale-105 hover:shadow-md">
             <div className="flex flex-row">
               <div className="h-6 w-6 mt-2 ml-2 rounded-full bg-gray-300"></div>
               <div className="flex mt-1 ml-1 flex-col text-[0.59rem] font-semibold justify-center -left-3">
@@ -135,7 +135,7 @@ function MessageBar() {
               <div className="text-[.5rem] text-gray-500">Review draft and reply to Chris Naido</div>
             </div>
           </div>
-          <div className="border-2 shadow-sm h-[4rem] w-[17rem] rounded-lg border-t-0">
+          <div className="border-2 shadow-sm h-[4rem] w-[17rem] rounded-lg border-t-0 hover:scale-105 hover:shadow-md">
             <div className="flex flex-row">
               <div className="h-6 w-6 mt-2 ml-2 rounded-full bg-gray-300"></div>
               <div className="flex mt-1 ml-1 flex-col text-[0.59rem] font-semibold justify-center -left-3">
@@ -146,7 +146,7 @@ function MessageBar() {
               </div>
             </div>
             <div className="bg-gray-100 w-[95%] h-[1rem] rounded-lg ml-2 pl-2">
-              <div className="text-[.5rem] text-gray-500">Prepare me for Fabrikams key stakeholder meeting</div>
+              <div className="text-[0.5rem] text-gray-500">Prepare me for Fabrikams key stakeholder meeting</div>
             </div>
           </div>
           <div className="text-blue-800">show all key activities</div>
