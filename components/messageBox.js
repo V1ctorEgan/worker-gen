@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSquare } from "react-icons/fa6";
+import PopUp from "./popUp";
 
-function MessageBar() {
+function MessageBar({handleOpen}) {
+  // const [showModal, setShowModal] = useState(false);
+
+      // const handleClose = () => {
+      //   setShowModal(false);
+      // } 
+
+
+  
+  
+    
   return (
     <div className="w-full z-10 md:w-1/7 shadow-2xl  border-l-blue-400 border-r-purple-400 border-t-blue-500 border-x-2 border h-[16rem] border-t-2 bg-white rounded-xl p-3 m-1 mr-20  border-gradient-to-r from-blue-500 to-purple-500">
       <div>
@@ -66,7 +77,7 @@ function MessageBar() {
             are actively engaging. These leads need your focus
           </div>
           <div className="flex flex-row p-2 gap-2 ">
-            <div className="w-[24rem] shadow-sm h-[8rem] border rounded-md hover:scale-105 hover:shadow-md">
+            <div onClick={handleOpen} className="w-[24rem] shadow-sm h-[8rem] border rounded-md hover:scale-105 hover:shadow-md " >
               <div className="flex  justify-start ">
                 {" "}
                 <div className="h-5 w-5 mt-2 ml-2 rounded-full bg-gray-300"></div>
@@ -93,14 +104,14 @@ function MessageBar() {
               <div className="flex  justify-start ">
                 {" "}
                 <div className="h-5 w-5 mt-2 ml-2 rounded-full bg-gray-300"></div>
-                <div className="flex mt-1 ml-1 flex-col text-[0.59rem] font-semibold justify-center -left-3">
+                <div className="flex mt-1 ml-1 flex-col text-[0.59rem] font-semibold justify-center cursor-pointer -left-3">
                   <div>Alan Munger</div>
                   <div className="text-gray-400">
                     Head of Real Estate Development . Contoso Coffee
                   </div>
                 </div>
               </div>
-              <div className="bg-blue-100 w-[95%] h-[4rem] rounded-lg ml-2 p-2">
+              <div className="bg-blue-100 w-[95%] h-[4rem] rounded-lg ml-2 p-2 cursor-pointer">
                 <div className="flex items-center gap-1 font-semibold">
                   <FaSquare className="text-xs" />{" "}
                   <span className="text-xs">
@@ -132,26 +143,33 @@ function MessageBar() {
               </div>
             </div>
             <div className="bg-gray-100 w-[95%] h-[1rem] rounded-lg ml-2 pl-2">
-              <div className="text-[.5rem] text-gray-500">Review draft and reply to Chris Naido</div>
+              <div className="text-[.5rem] text-gray-500">
+                Review draft and reply to Chris Naido
+              </div>
             </div>
           </div>
           <div className="border-2 shadow-sm h-[4rem] w-[17rem] rounded-lg border-t-0 hover:scale-105 hover:shadow-md">
             <div className="flex flex-row">
               <div className="h-6 w-6 mt-2 ml-2 rounded-full bg-gray-300"></div>
               <div className="flex mt-1 ml-1 flex-col text-[0.59rem] font-semibold justify-center -left-3">
-                <div className="font-bold">Partnership opportunity for Fabrikam</div>
+                <div className="font-bold">
+                  Partnership opportunity for Fabrikam
+                </div>
                 <div className="text-gray-400 text-[.5rem]">
-                  Fabrikam  .$280,000 . 12 days to close
+                  Fabrikam .$280,000 . 12 days to close
                 </div>
               </div>
             </div>
             <div className="bg-gray-100 w-[95%] h-[1rem] rounded-lg ml-2 pl-2">
-              <div className="text-[0.5rem] text-gray-500">Prepare me for Fabrikams key stakeholder meeting</div>
+              <div className="text-[0.5rem] text-gray-500">
+                Prepare me for Fabrikams key stakeholder meeting
+              </div>
             </div>
           </div>
           <div className="text-blue-800">show all key activities</div>
         </div>
       </div>
+
     </div>
   );
 }
