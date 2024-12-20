@@ -3,6 +3,8 @@ import SideNavbar from "../components/sideNavbar";
 import Navbar from "../components/navbar";
 import { Disclosure } from "@headlessui/react";
 import MessageBar from "../components/messageBox";
+import SearchBar from "../components/searchBar";
+import MessageList from "../components/messageList";
 
 export default function Home() {
   return (
@@ -24,6 +26,11 @@ export default function Home() {
 
             <Navbar />
             <MessageBar />
+            <div className="bg-white h-full pt-1 rounded-sm z-2 -shadow-sm -inset-1 ml-2 mt-2">
+
+            <SearchBar />
+            <MessageList />
+            </div>
             </div>
           </div>
         </div>

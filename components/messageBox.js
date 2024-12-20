@@ -4,7 +4,7 @@ import { FaSquare } from "react-icons/fa6";
 
 function MessageBar() {
   return (
-    <div className="w-full md:w-1/7 shadow-2xl  border-l-blue-400 border-r-purple-400 border-t-blue-500 border-x-2 border h-[16rem] border-t-2 bg-white rounded-xl p-3 m-1 mr-20  border-gradient-to-r from-blue-500 to-purple-500">
+    <div className="w-full z-10 md:w-1/7 shadow-2xl  border-l-blue-400 border-r-purple-400 border-t-blue-500 border-x-2 border h-[16rem] border-t-2 bg-white rounded-xl p-3 m-1 mr-20  border-gradient-to-r from-blue-500 to-purple-500">
       <div>
         <div className="flex  -mt-3 items-center justify-start gap-2">
           <div className="font-semibold text-sm">
