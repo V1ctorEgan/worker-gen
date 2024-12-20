@@ -146,7 +146,7 @@ function MessageBar() {
               </div>
             </div>
             <div className="bg-gray-100 w-[95%] h-[1rem] rounded-lg ml-2 pl-2">
-              <div className="text-[.5rem] text-gray-500">Prepare me for Fabrikam'/s key stakeholder meeting</div>
+              <div className="text-[.5rem] text-gray-500">Prepare me for Fabrikams key stakeholder meeting</div>
             </div>
           </div>
           <div className="text-blue-800">show all key activities</div>
